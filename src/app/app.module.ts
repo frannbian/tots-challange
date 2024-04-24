@@ -7,6 +7,12 @@ import { TOTS_CORE_PROVIDER, TotsCoreModule } from '@tots/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TOTS_AUTH_PROVIDER, TotsAuthConfig, TotsAuthInterceptor, TotsAuthModule } from '@tots/auth';
 import { TOTS_CLOUD_STORAGE_PROVIDER } from '@tots/cloud-storage';
+import { TotsTableModule } from '@tots/table';
+import { TotsFormModule } from '@tots/form';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TotsEditableColumnsModule } from '@tots/editable-columns';
+import { TotsDateFieldFormModule } from '@tots/date-field-form';
+import { TotsUsersSelectorMenuModule } from '@tots/users-selector-menu';
 
 @NgModule({
   declarations: [
@@ -19,6 +25,14 @@ import { TOTS_CLOUD_STORAGE_PROVIDER } from '@tots/cloud-storage';
     /** Tots Libraries */
     TotsCoreModule,
     TotsAuthModule,
+    TotsTableModule,
+    TotsFormModule,
+    TotsEditableColumnsModule,
+    BrowserAnimationsModule,
+    TotsDateFieldFormModule,
+    TotsFormModule,
+    TotsDateFieldFormModule,
+    TotsUsersSelectorMenuModule,
   ],
   providers: [
     {
